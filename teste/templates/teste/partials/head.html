@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        .material-symbols-rounded {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 40;
+        }
+    </style>
+
+    <title>Teste</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(207, 207, 207);
+            color: #1a1b24;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'roboto Slab', serif;
+        }
+
+        .container {
+            max-width: 144rem;
+            margin: 0 auto;
+            padding: 3rem;
+        }
+
+        .main-header-container {
+            background: #13141f;
+        }
+
+        .main-logo {
+            font-size: 4rem;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            flex-flow: row-reverse;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .search-form {
+            border: .2rem solid rgb(77, 77, 77);
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: .4rem;
+            position: relative;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input,
+        .search-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input {
+            width: 100%;
+            padding-right: 3rem;
+        }
+
+        .search-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .search-button:focus {
+            outline: 1px solid rgb(73, 73, 73);
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .search-form:focus-within {
+            border-color: rgb(46, 85, 107);
+            background: white;
+
+        }
+
+        .search-form:focus-within .search-button {
+            color: rgb(46, 85, 107);
+        }
+
+        .main-content {
+            padding-top: 0;
+        }
+
+        .main-content-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 4rem;
+        }
+
+        .teste {
+            background: white;
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+            transform: scale(1);
+            transition: all 300ms ease-in-out;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .teste img {
+            max-width: 100%;
+        }
+
+        .teste-list-item {
+            max-width: 64rem;
+        }
+
+        .teste-list-item:hover {
+            transform: scale(1.02);
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, .3);
+        }
+
+        .teste-title-container {
+            padding: 3rem;
+            padding-bottom: 2rem;
+        }
+
+        .teste-author {
+            padding: 0 3rem;
+        }
+
+        .teste-content {
+            padding: 3rem;
+            padding-top: 2rem;
+        }
+
+        .teste-author-item {
+            color: #7a7a7a;
+            margin-right: 1rem;
+        }
+
+        .teste-author a {
+            color: rgb(46, 85, 107);
+            transition: all 300ms ease-in-out;
+            text-decoration: none;
+        }
+
+        .teste-author a:hover {
+            color: #000000;
+        }
+
+        .teste-meta-container {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 3rem;
+            background: rgb(207, 207, 207);
+        }
+
+        .teste-meta {
+            display: flex;
+            flex-flow: column nowrap;
+            flex-shrink: 1;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .teste-footer a {
+            background: #13141f;
+            display: block;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 1.5rem;
+            transition: all 300ms ease-in-out;
+        }
+
+        .teste-footer {
+            filter: brightness(1.5);
+        }
+
+        .main-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #13141f;
+            color: white;
+            padding: 4rem;
+        }
+
+        .main-footer a {
+            color: white;
+            text-decoration: none;
+            transition: all 300ms ease-in-out;
+        }
+
+        .main-footer a:hover {
+            filter: brightness(0.8);
+        }
+    </style>
+
+</head>
